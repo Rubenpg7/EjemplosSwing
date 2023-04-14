@@ -21,7 +21,8 @@ public class BorderLayoutDemoListener extends JFrame {
 		String[] posicion = {BorderLayout.NORTH, BorderLayout.SOUTH, BorderLayout.EAST, BorderLayout.WEST};
 		
 		for(int i=0; i < botonera.size(); i++) {
-			botonera.get(i).addActionListener(new controlBotones(botonera.get(i).getText(), texto));
+			botonera.get(i).addActionListener(new controlBotones(botonera.get(i).getText(), texto)); //botonera.get(i).getText() Aqui paso el texto del botón
+																									 //texto --> campo de texto
 			this.add(botonera.get(i), posicion[i]);
 		}
 		this.add(texto, BorderLayout.CENTER);
